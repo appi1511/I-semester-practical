@@ -1,0 +1,19 @@
+#include<stdio.h>
+ 
+int main()
+{
+    int a=0;
+    int b=1;
+    int c,d,n;
+    d=3;
+    scanf("%i",&n);
+    printf("%i %i ",a,b);
+    while(d<=n)
+    {
+        c=a+b;
+        printf("%i ",c);
+        a=b;
+        b=c;
+        d++;
+    }return 0;
+}
