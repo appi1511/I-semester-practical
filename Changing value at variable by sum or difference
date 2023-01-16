@@ -1,0 +1,19 @@
+#include<stdio.h>
+void funct(int *add,int *sub)
+{
+    int a=*add;
+    int b=*sub;
+    *add=a+b;
+    *sub=a-b;
+}
+int main()
+{
+    int a,b;
+    printf("Enter value of first ");
+    scanf("%d",&a);
+    printf("Enter value of second ");
+    scanf("%d",&b);
+    printf("Value of a is %d and value of b is %d\n",a,b);
+    funct(&a,&b);
+    printf("Value of a is %d and value of b is %d",a,b);
+}
