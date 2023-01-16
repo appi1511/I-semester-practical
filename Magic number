@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("Input the number ");
+    scanf("%i",&a);
+    c=0;
+    while(a>9)
+    {
+        while(a>0)
+        {
+            b=a%10;
+            a=a/10;
+            c=c+b;
+        }
+        a=c;
+        c=0;
+    }
+    if(a==1)
+    printf("Magic number");
+    else
+    printf("Not a magic number");
+    return 0;
+}
