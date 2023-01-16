@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char s[100];
+    char p[100];
+    scanf("%[^\n]%*C",s);
+    scanf("%[^\n]%*C",p);
+    int c;
+    for(int i=0;s[i]!='\0';i++)
+    {
+        if(s[i]>p[i])
+        {printf("1");
+        c=1;
+        break;}
+        else if(s[i]<p[i])
+        {
+            printf("-1");
+            c=1;
+            break;
+        }
+    }
+    if(c!=1)
+    printf("Identical");
+    return 0;
+}
