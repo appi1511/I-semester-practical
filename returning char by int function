@@ -1,0 +1,12 @@
+#include <stdio.h>
+int rash(int n);
+int main(){
+    int d;
+    scanf("%d", &d);
+    rash(d);
+    return 0;
+}
+int rash(int n){
+    int p=n<=0?(n==0 ? printf("Zero"):printf("Negative")):printf("Positive");
+    return p;
+}
