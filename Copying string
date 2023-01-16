@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    char s[100];
+    char p[100];
+    scanf("%[^\n]%*C",s);
+    scanf("%[^n]%*C",p);
+    for(int i=0;s[i]!='\0';i++)
+    {
+        p[i]=s[i];
+    }
+    printf("%s",p);
+    return 0;
+}
