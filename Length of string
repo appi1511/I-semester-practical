@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+  char s[100];
+  scanf("%[^\n]%*C",s);
+  int a=0;
+  for(int i=0;s[i]!='\0';i++)
+  a++;
+  printf("Length of string is %i",a);
+  return 0;
+}
