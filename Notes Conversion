@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{int a,h,fh,tt;
+/* Give a amount, multiple of 100*/
+printf("Enter the amount:");
+scanf("%d",&a);
+/*At least one hundred rupee note is compulsory*/
+a=a-100;
+tt=a/2000;
+a=a%2000;
+fh=a/500;
+a=a%500;
+h=a/100;
+h=h+1;
+a=a%100;
+printf("No. of 2000 notes: %d\nNo. of 500 notes: %d\nNo. of 100 notes: %d\nRemaining money: %d",tt,fh,h,a);
+return 0;}
