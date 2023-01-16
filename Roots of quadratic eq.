@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int a,b,c,det,d2,r1,r2;
+    printf("Give the value of a:");
+    scanf("%i",&a);
+    printf("Give the value of b:");
+    scanf("%i",&b);
+    printf("Give the value of c:");
+    scanf("%i",&c);
+    det=pow(b,2)-4*a*c;
+    d2=pow(det,0.5);
+    if(det>=0){
+        r1=(-b+d2)/(2*a);
+        r2=(-b-d2)/(2*a);
+        printf("Real roots are present\nRoot 1:%d\nRoot 2:%d\n",r1,r2);
+        printf("%i",det);
+    }
+    else{
+        printf("Imaginary roots\nNo solutions");
+        
+}return 0;
+}
