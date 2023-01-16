@@ -1,0 +1,13 @@
+/* Write a C program to input and print the greatest of two given integers without using if-else and math.h*/
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("Enter the value of a:");
+    scanf("%d",&a);
+    printf("Enter the value of b:");
+    scanf("%d",&b);
+    c=a*(a>b)+b*(b>a);
+    printf("Greater integer is %d",c);
+    return 0;
+}
