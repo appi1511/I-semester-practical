@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,c,d,e;
+    printf("Give first integer ");
+    scanf("%i",&a);
+    printf("Give second integer");
+    scanf("%i",&b);
+    printf("Give third integer");
+    scanf("%i",&c);
+    d=(a>b)&&(a>c);
+    if(d==1){
+        printf("%i is greatest",a);
+    }
+    else if{
+        e=(b>a)&&(b>c);
+        printf("%d is greater",b);
+    }
+    else{
+        printf("%d is greater"c);
+    }
+    return 0;
+}
