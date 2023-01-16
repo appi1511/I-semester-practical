@@ -1,0 +1,12 @@
+#include<stdio.h>
+void scan(int *p,int *q)
+{
+    scanf("%i",p);
+    scanf("%i",q);
+}
+int main()
+{
+  int a,b;
+  scan(&a,&b);
+  return 0;
+}
