@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+    char s[100];
+    int a,b,c,d,e=0;
+    fgets(s,100,stdin);
+    for(int i=0;s[i]!='\0';i++)
+    {
+        if(s[i]>=65 && s[i]<=90)
+        a++;
+        else if(s[i]>=97 && s[i]<=122)
+        b++;
+        else if(s[i]>=48 && s[i]<=57)
+        c++;
+        else if(s[i]==' ')
+        d++;
+        else
+        e++;
+    }
+    printf("Upper case %i\n",a);
+    printf("Lower case %i\n",b);
+    printf("Digit %i\n",c);
+    printf("Spaces %i\n",d);
+    printf("Special characters %i",e-1);
+    return 0;
+}
