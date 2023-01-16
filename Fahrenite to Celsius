@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main()
+{float a;
+printf("Enter the temperature in Fahrenite:");
+scanf("%f",&a);
+printf("Temperature in Celsius:%f",(a-32)*0.5556);
+return 0;
+}
