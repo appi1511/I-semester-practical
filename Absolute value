@@ -1,0 +1,11 @@
+/* Write a C program to take an integer and print its absolute value*/
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    printf("Give value ofa");
+    scanf("%d",&a);
+    b=a*(-(a<0))+a*(a>0);
+    printf("Absolute value %d",b);
+    return 0;
+}
