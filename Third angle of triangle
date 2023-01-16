@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main()
+{float a,b;
+printf("Enter the length of first side:");
+scanf("%f",&a);
+printf("Enter the length of the second side:");
+scanf("%f",&b);
+printf("Length of the third side is:%f",180.00-(a+b));
+return 0;}
